@@ -2,7 +2,7 @@ button {
   display: block;
   width: 100%;
   padding: 8px 0;
-  color: rgb(0, 151, 238);
+  color: 1.5px dashed rgb(0, 151, 238);
   margin: 8px auto
     
 }
