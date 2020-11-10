@@ -12,18 +12,13 @@
   <p> <b><label>Demo สมัครลงทะเบียนxxxxx Demo</label> </b> </p>
      <p> <label>ชื่อนามสกุล</label> </p>
      <p> <input class=”form-control” type=”text” id=”name” name=”name”/><br /> </p>
-     <p><label>เลขประจำตัวประชาชน</label> </p>
+     <p> <label>เลขประจำตัวประชาชน</label> </p>
      <p> <input class=”form-control” type=”text” id=”samnak” name=”samnak” /><br /> </p>
+     <p><b> <button onclick="openWindow()">ยืนยันข้อมูลลงทะเบียน</button></b></p>
+     <p> <button onclick="openWindow2()">!!คลิกเพื่ออ่านข้อมูลคุณสมบัติผู้สมัครลงทะเบียน!!</button></p>
+     <p>  <button id="btnClose" onclick="closed()">ยกเลิก</button> </p>
 
-    <p><b> <button onclick="openWindow()">ยืนยันข้อมูลลงทะเบียน</button></b></p>
-    <p> <button onclick="openWindow2()">!!คลิกเพื่ออ่านข้อมูลคุณสมบัติผู้สมัครลงทะเบียน!!</button></p>
-  
-    <p> <button id="btnMsg" onclick="sendMsg()">Send Message ลงทะเบียน</button></p>
-
-   <p><button id="btnLogOut" onclick="logOut()">Log Out หน่อย</button></p>
-   <p>  <button id="btnClose" onclick="closed()">Close</button> </p>
-  
-     
+          
   <!-- <script src="js/vconsole.min.js"></script> -->
   <!-- <script>
     var vConsole = new VConsole()
@@ -43,20 +38,7 @@
       document.getElementById("universalLink2").append(link2)
     }
 
-    async function shareMsg() {
-      await liff.shareTargetPicker([
-        {
-          "type": "text",
-          "text": "This message was sent by ShareTargetPicker นะจ๊ะ  จบการ Demo จ้า  สวัสดี...^^",
-        }
-      ])
-    }
-
-    function logOut() {
-      liff.logout()
-      window.location.reload()
-    }
-
+  
     function closed() {
       liff.closeWindow()
     }
