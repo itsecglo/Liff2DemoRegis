@@ -2,11 +2,13 @@ button {
   display: block;
   width: 100%;
   padding: 8px 0;
+  color: rgb(0, 151, 238);
   margin: 8px auto
+    
 }
 
 p {
-  border-bottom: 1px dashed rgb(6, 175, 0)
+  border-bottom: 1px dashed rgb(252, 252, 252)
 }
 
 #pictureUrl {
